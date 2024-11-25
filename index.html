@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>да's bio</title>
+    <meta name="description" content="Сайт очередного пиздера сайтов">
+    <link rel="shortcut icon" href=".//assets/favicon.ico">
+    <link rel="manifest" href=".//assets/site.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
+    <meta name="google-site-verification" content="vRL_nuCjIUeAzwDbgj7D1CVxwNqea8VEWQBNT22DYPc" />
+    <script>
+        let toggle = true;
+        
+        setInterval(() => {
+            document.title = toggle ? "да's bio" : "да's bio >.<";
+            toggle = !toggle;
+        }, 500);
+    </script>
+</head>
+<body onload="loadPage()">
+    <script>
+var end = new Date('12/09/2024 12:00 AM');
+
+    var _second = 1000;
+    var _minute = _second * 60;
+    var _hour = _minute * 60;
+    var _day = _hour * 24;
+    var timer;
+
+    function showRemaining() {
+        var now = new Date();
+        var distance = end - now;
+        if (distance < 0) {
+
+            clearInterval(timer);
+            document.getElementById('countdown').innerHTML = 'ура, др!!';
+
+            return;
+        }
+        var days = Math.floor(distance / _day);
+        var hours = Math.floor((distance % _day) / _hour);
+        var minutes = Math.floor((distance % _hour) / _minute);
+        var seconds = Math.floor((distance % _minute) / _second);
+
+        document.getElementById('countdown').innerHTML = days + 'д ';
+        document.getElementById('countdown').innerHTML += hours + 'ч ';
+        document.getElementById('countdown').innerHTML += minutes + 'мин ';
+        document.getElementById('countdown').innerHTML += seconds + 'сек';
+    }
+
+    timer = setInterval(showRemaining, 1000);
+</script>
+    <div class="header">
+        <a class="main">
+            <div class="name">yesxdyes</div>
+            <div style="position:absolute; bottom:0px;"><font size="1">thx to kreewxq</font></div> 
+            <div class="aka">также известен как<b> да.</b></div>
+        </a>
+    </div>
+
+    <div class="aboutme">
+        <a class="whoami">
+            <div class="nameage">я <b>леша,</b> мне <b>xx.</b></div>
+            <div class="city">живу в <b><href="https://steamcommunity.com/id/ayugram">москве.</b></button></div>
+            <div class="bd">мой день рождения через <b><div id="countdown"></div></b></div>
+        </a>
+
+        <a class="socials">
+            <div class="socialsheader"><b>ссылки:</b></div>
+            <div class="socialsbuttons">
+                <a target="_blank" href="https://t.me/yesxdyes" class="button-primary">Telegram</a>
+                <a target="_blank" href="https://steamcommunity.com/id/ayugram" class="button-primary">Steam</a>
+                <a target="_blank" href="https://discord.com/users/735473454811185173" class="button-primary">Discord</a>
+                <a target="_blank" href="https://youtube.com/@аюграм" class="button-primary">YouTube</a>            </div>
+        </a>
+    </div>
+</body>
+</html>
